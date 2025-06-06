@@ -11,16 +11,26 @@ public:
 
 bool cmp(Student l, Student r)
 {
-    // if (l.studentMark > r.studentMark)
-    // {
-    //     return true;
-    // }
-    // else
-    // {
-    //     return false;
-    // }
+    if (l.studentMark > r.studentMark)
+    {
+        return true;
+    }
+    else if (l.studentMark < r.studentMark)
+    {
+        return false;
+    }
 
-    return l.studentRoll < r.studentRoll;
+    else
+    {
+        if (l.studentRoll < r.studentRoll)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
 
 int main()
